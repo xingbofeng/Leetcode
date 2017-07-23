@@ -45,7 +45,7 @@ struct ListNode* rotateRight(struct ListNode* head, int k) {
     q = q->next;
     if (q == NULL) {
       k = k % (i + 1);
-      i = 1;
+      i = -1;
       q = *p;
     }
   }
